@@ -60,7 +60,7 @@ for (let i = 0; i < task2.length; i++) {
       </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list float-end mt-2" viewBox="0 0 16 16">
       <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
     </svg></p>
-<img src="./image/${task2[i].image}" height="200" width="200" class="card-img-top p-1  border" alt="${task2[i].taskName}">
+<img src="image/${task2[i].image}" height="200" width="200" class="card-img-top p-1  border" alt="${task2[i].taskName}">
 <div class="card-body">
   <h5 class="card-title">${task2[i].taskName}</h5>
   <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
@@ -88,7 +88,7 @@ let buttons = document.querySelectorAll(".showMore");
 for (let i = 0; i< buttons.length; i++ ){
     buttons[i].addEventListener("click", function(){
         result.innerHTML += `<div class="card" style="width: 30rem;">
-        <img src="./image/${task2[i].image}" height="200" width="200" class="card-img-top" alt="">
+        <img src="image/${task2[i].image}" height="200" width="200" class="card-img-top" alt="">
         <div class="card-body">
           <h5 class="card-title">${task2[i].taskName}</h5>
           <p class="card-text">${task2[i].description}</p>
