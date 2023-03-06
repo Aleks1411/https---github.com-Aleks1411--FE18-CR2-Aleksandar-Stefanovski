@@ -2,51 +2,51 @@ const result = document.getElementById('img');
 let task_json = `
     [{
         "taskName": "Cooking",
-        "image": "/image/img1.png",
+        "image": "img1.png",
         "description": "Cooking whit my family",
         "importance": "0"
     } ,
     {
         "taskName": "Walk ",
-        "image": "/image/img2.png",
+        "image": "img2.png",
         "description": "Walk with my Dog",
         "importance": "0"
     },
     {
         "taskName": "Fitness",
-        "image": "/image/img3.png",
+        "image": "img3.png",
         "description": "Monady,Wednesday,Friday from 17:00 till 18:00",
         "importance": "0"
     },
     {
         "taskName": "Sopping",
-        "image": "/image/img4.png",
+        "image": "img4.png",
         "description": "Buy grocerys  ",
         "importance": "0"
     },
     {
         "taskName": "Meet my friends",
-        "image": "/image/img5.png",
+        "image": "img5.png",
         "description": "Meet Anna, Karl, Lisa",
         "importance": "0"
     },{
         "taskName": "Spa Day",
-        "image": "/image/img6.png",
+        "image": "img6.png",
         "description": "Spa day with Karl",
         "importance": "0"
     },{
         "taskName": "Car wash",
-        "image": "/image/img7.png",
+        "image": "img7.png",
         "description": "Bring the car to CarWash",
         "importance": "0"
     },{
         "taskName": "Chlotes to wash",
-        "image": "/image/img8.png",
+        "image": "img8.png",
         "description": "Wash the Chlotes",
         "importance": "0"
     },{
         "taskName": "Clean",
-        "image": "/image/img9.png",
+        "image": "img9.png",
         "description": "Clean the flat",
         "importance": "0"
     }
@@ -60,7 +60,7 @@ for (let i = 0; i < task2.length; i++) {
       </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list float-end mt-2" viewBox="0 0 16 16">
       <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
     </svg></p>
-<img src="${task2[i].image}" height="200" width="200" class="card-img-top p-1  border" alt="${task2[i].taskName}">
+<img src="./image/${task2[i].image}" height="200" width="200" class="card-img-top p-1  border" alt="${task2[i].taskName}">
 <div class="card-body">
   <h5 class="card-title">${task2[i].taskName}</h5>
   <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
@@ -88,7 +88,7 @@ let buttons = document.querySelectorAll(".showMore");
 for (let i = 0; i< buttons.length; i++ ){
     buttons[i].addEventListener("click", function(){
         result.innerHTML += `<div class="card" style="width: 30rem;">
-        <img src="${task2[i].image}" height="200" width="200" class="card-img-top" alt="">
+        <img src="./image/${task2[i].image}" height="200" width="200" class="card-img-top" alt="">
         <div class="card-body">
           <h5 class="card-title">${task2[i].taskName}</h5>
           <p class="card-text">${task2[i].description}</p>
