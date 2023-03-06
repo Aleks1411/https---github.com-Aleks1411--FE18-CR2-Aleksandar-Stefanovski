@@ -2,51 +2,51 @@ const result = document.getElementById('img');
 let task_json = `
     [{
         "taskName": "Cooking",
-        "image": "./image/img1.png",
+        "image": "/image/img1.png",
         "description": "Cooking whit my family",
         "importance": "0"
     } ,
     {
         "taskName": "Walk ",
-        "image": "./image/img2.png",
+        "image": "/image/img2.png",
         "description": "Walk with my Dog",
         "importance": "0"
     },
     {
         "taskName": "Fitness",
-        "image": "./image/img3.png",
+        "image": "/image/img3.png",
         "description": "Monady,Wednesday,Friday from 17:00 till 18:00",
         "importance": "0"
     },
     {
         "taskName": "Sopping",
-        "image": "./image/img4.png",
+        "image": "/image/img4.png",
         "description": "Buy grocerys  ",
         "importance": "0"
     },
     {
         "taskName": "Meet my friends",
-        "image": "./image/img5.png",
+        "image": "/image/img5.png",
         "description": "Meet Anna, Karl, Lisa",
         "importance": "0"
     },{
         "taskName": "Spa Day",
-        "image": "./image/img6.png",
+        "image": "/image/img6.png",
         "description": "Spa day with Karl",
         "importance": "0"
     },{
         "taskName": "Car wash",
-        "image": "./image/img7.png",
+        "image": "/image/img7.png",
         "description": "Bring the car to CarWash",
         "importance": "0"
     },{
         "taskName": "Chlotes to wash",
-        "image": "./image/img8.png",
+        "image": "/image/img8.png",
         "description": "Wash the Chlotes",
         "importance": "0"
     },{
         "taskName": "Clean",
-        "image": "./image/img9.png",
+        "image": "/image/img9.png",
         "description": "Clean the flat",
         "importance": "0"
     }
